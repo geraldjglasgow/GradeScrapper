@@ -16,7 +16,6 @@ public class CourseScraper implements Scraper {
 
     public void scrape() {
         WebDriver driver = ScraperFactory.getDriver();
-        String courseName;
         List<Course> courses = Lists.newArrayList();
         webElementCourses = ScraperUtils.getClassRowWebElements(driver);
         for (int i = 3; i < webElementCourses.size() - 3; i++) {
